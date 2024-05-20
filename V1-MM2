@@ -2547,7 +2547,7 @@ Section:KeyBind("Shoot Murderer", "C", function(Key)
 end)
 
 Section:Button("Sherrif Aimbot", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Scripts/main/AimLock"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Scripts/main/AimLock1"))()
 end)
 
 
