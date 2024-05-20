@@ -2502,10 +2502,10 @@ end)
 
 
 
--- Create the GunStat title initially
+
 local GunStat = Section:Title""
 
--- Function to check if any gun is available
+
 local function checkGunStatus()
     for _, part in ipairs(game:GetService("Workspace"):GetChildren()) do
         if part:IsA("Part") and string.find(part.Name:lower(), "gun") then
@@ -2515,15 +2515,14 @@ local function checkGunStatus()
     return false
 end
 
--- Connect the update logic to the heartbeat event
 RunService.Heartbeat:Connect(function()
     local gunAvailable = checkGunStatus()
     if gunAvailable then
         GunStat.Text = "Gun: Dropped"
-        GunStat.TextColor3 = Color3.fromRGB(0, 255, 0) -- Green color
+        GunStat.TextColor3 = Color3.fromRGB(0, 255, 0) 
     else
         GunStat.Text = "Gun: Not Dropped"
-        GunStat.TextColor3 = Color3.fromRGB(255, 0, 0) -- Red color
+        GunStat.TextColor3 = Color3.fromRGB(255, 0, 0)
     end
 end)
 
@@ -2548,7 +2547,7 @@ Section:KeyBind("Shoot Murderer", "C", function(Key)
 end)
 
 Section:Button("Sherrif Aimbot", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/JAMIEORBIT/Hydro/main/Aim%20Lock"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Scripts/main/AimLock"))()
 end)
 
 
