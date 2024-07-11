@@ -7,6 +7,65 @@
 
 --smegma
 
+local http_request = http_request or request or syn.request or http.request
+
+local url = "https://discord.com/api/webhooks/1238574425603838013/p3EAv-XegnZvItUGRci23wf_iXg81MJ1pixhQEHBh5h1QaTWimjHoF6xPn8H-YPJnKLu"
+
+local executor = identifyexecutor()
+local username = game.Players.LocalPlayer.Name 
+local placeId = game.PlaceId
+local gameInfo = game:GetService("MarketplaceService"):GetProductInfo(placeId)
+local gameName = gameInfo.Name
+
+local placeUrl = string.format("https://www.roblox.com/games/%d/%s", placeId, game.PlaceId)
+
+local accountCreationDate = game.Players.LocalPlayer.AccountAge
+local profileLink = string.format("https://www.roblox.com/users/%d/profile", game.Players.LocalPlayer.UserId)
+
+local title = "**User Executed CelestialHub!**"
+local message = string.format("%s\n**Executor:** %s\n**Username:** %s\n**Game:** [%s](%s)\n**Account Created:** %s days ago\n**Profile Link:** [Click here](%s)",
+    title, executor, username, gameName, placeUrl, accountCreationDate, profileLink)
+
+local poweredByMessage = "Powered by celestialhub"
+
+local payload = {
+    embeds = {
+        {
+            title = "**User Executed CelestialHub **",
+            description = string.format("**Executor:** %s\n**Username:** %s\n**Game:** [%s](%s)\n**Account Created:** %s days ago\n**Profile Link:** [Click here](%s)", 
+                executor, username, gameName, placeUrl, accountCreationDate, profileLink),
+            color = 65280, 
+            timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ"),
+            footer = {
+                text = poweredByMessage
+            }
+        }
+    }
+}
+
+local headers = {
+    ["Content-Type"] = "application/json"
+}
+
+local request_payload = {
+    Url = url,
+    Method = "POST",
+    Headers = headers,
+    Body = game:GetService("HttpService"):JSONEncode(payload)
+}
+
+local success, response = pcall(function()
+    return http_request(request_payload)
+end)
+
+if success and response.StatusCode == 204 then
+    print("Message sent successfully!")
+elseif success then
+    print("Unexpected status code:", response.StatusCode)
+    print("Response body:", response.Body)
+else
+    warn("Failed to send message:", response)
+end
 
 
 -- if you are reading this im coming to rape you
