@@ -87,8 +87,8 @@ elseif game.PlaceId == 5006801542 or game.PlaceId == 860428890 or game.PlaceId =
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/Assassin_Public.lua"))()
 elseif game.PlaceId == 537413528 then -- Build A Boat For Treasure
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/BAB4T_Public.lua"))()
-
+elseif game.PlaceId == 1962086868 then -- Tower Of Hell
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/TOH_Public.lua"))()
 end
-
 
 
