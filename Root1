@@ -82,12 +82,12 @@ end)
 
 
 if game.PlaceId == 142823291 then -- MM2 Normal & Disguises
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/MM2_Public.lua"))()
-elseif game.PlaceId == 5006801542 or 860428890 or 5006801542 then -- Assassin, Pro & FreePlay
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/Assassin_Public.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/MM2_Public.lua"))()
+elseif game.PlaceId == 5006801542 or game.PlaceId == 860428890 then -- Assassin, Pro & FreePlay
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/Assassin_Public.lua"))()
 elseif game.PlaceId == 537413528 then -- Build A Boat For Treasure
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/BAB4T_Public.lua"))()
-
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/BAB4T_Public.lua"))()
 end
+
 
 
