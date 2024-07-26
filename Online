@@ -1,1 +1,1 @@
-return "123analbeads"
+    return {"123analbeads", "online"}
