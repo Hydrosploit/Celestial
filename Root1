@@ -90,6 +90,8 @@ elseif game.PlaceId == 537413528 then -- Build A Boat For Treasure
 elseif game.PlaceId == 1962086868 then -- Tower Of Hell
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/TOH_Public.lua"))()
 elseif game.PlaceId == 621129760 then -- KAT
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/KAT.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/KAT_Public.lua"))()
 end
+
+
 
