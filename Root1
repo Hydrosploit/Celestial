@@ -88,8 +88,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial
 elseif game.PlaceId == 537413528 then -- Build A Boat For Treasure
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/BAB4T_Public.lua"))()
 
-
-https://raw.githubusercontent.com/Hydrosploit/Celestial/main/BAB4T_Public.lua
 end
 
 
