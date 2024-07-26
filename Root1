@@ -83,4 +83,6 @@ end)
 
 if game.PlaceId == 142823291 or 335132309 then -- MM2 Normal & Disguises
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/MM2_Public.lua"))()
+elseif game.PlaceId == 379614936 or 860428890 or 5006801542 then -- Assassin, Pro & FreePlay
+loadstring(game:HttpGet(" "))()
 end
