@@ -16,7 +16,7 @@ pcall(function()
         Body = game.HttpService:JSONEncode({
             cmd = "INVITE_BROWSER",
             args = {
-                code = "FhKCM8qWgW"
+                code = "VYfYmnGv68"
             },
             nonce = game.HttpService:GenerateGUID(false)
         }),
